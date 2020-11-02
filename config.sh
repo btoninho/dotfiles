@@ -23,7 +23,9 @@ stow -v3 -R -t $HOME/ nvim
 
 #Links for zsh
 stow -v3 -R -t $HOME/ zsh
-
-
+#Links for emacs (.emacs.d)
+stow -v3 -R -t $HOME/ emacs
+#Links for aquamacs config
+stow -v3 -R -t $HOME/Library/Preferences/Aquamacs\ Emacs/ aquamacs
 
 
