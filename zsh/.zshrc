@@ -1,13 +1,12 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/Library/Python/3.9/bin:$HOME/go/bin/:$HOME/bin:/usr/local/bin:$HOME/Library/Haskell/bin:/usr/bin:/usr/sbin:$PATH
 
-alias ls="ls -lGFh"
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-export PATH=":$HOME/.cargo/bin:$HOME/Library/Haskell/bin:$PATH"
-export GOPATH=/Users/btoninho/go
-export PATH=$PATH:~/.local/bin
+CAML_LD_LIBRARY_PATH=/Users/btoninho/.opam/system/lib/stublibs:/usr/local/lib/ocaml/stublibs; export CAML_LD_LIBRARY_PATH;
+OCAML_TOPLEVEL_PATH=/Users/btoninho/.opam/system/lib/toplevel; export OCAML_TOPLEVEL_PATH;
 
+[ -f "/Users/btoninho/.ghcup/env" ] && source "/Users/btoninho/.ghcup/env" # ghcup-env
 
+eval `opam config env`
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/btoninho/.oh-my-zsh"
@@ -75,8 +74,8 @@ ZSH_THEME="half-life"
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# Add wisely, as too many  slow down shell startup.
+plugins=(git osx web-search vscode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,3 +104,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim="nvim"
+alias vi="nvim"
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+path+='/Users/btoninho/spin/Src'
+export PATH
+

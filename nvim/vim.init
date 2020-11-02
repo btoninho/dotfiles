@@ -1,0 +1,16 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath = &runtimepath
+
+
+call plug#begin('~/.local/share/nvim/plugged')
+if has('nvim')
+	
+	" Misc
+	Plug 'ntpeters/vim-better-whitespace'
+	Plug 'robertmeta/nofrils'
+endif
+call plug#end()
+
+set number
+filetype indent plugin on
+syntax on
