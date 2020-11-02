@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/Users/btoninho/.config/coc/extensions/coc-java-data/jdt_ws_b892a4ed5585999e366c813151daf232/.metadata/.plugins/org.eclipse.jdt.core
+3535793457.index
