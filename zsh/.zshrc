@@ -4,6 +4,7 @@ export PATH=$HOME/Library/Python/3.9/bin:$HOME/go/bin/:$HOME/bin:/usr/local/bin:
 CAML_LD_LIBRARY_PATH=/Users/btoninho/.opam/system/lib/stublibs:/usr/local/lib/ocaml/stublibs; export CAML_LD_LIBRARY_PATH;
 OCAML_TOPLEVEL_PATH=/Users/btoninho/.opam/system/lib/toplevel; export OCAML_TOPLEVEL_PATH;
 
+
 [ -f "/Users/btoninho/.ghcup/env" ] && source "/Users/btoninho/.ghcup/env" # ghcup-env
 
 eval `opam config env`
@@ -109,7 +110,10 @@ alias vi="nvim"
 
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+path+='/Users/btoninho/go/bin'
 path+='/Users/btoninho/spin/Src'
 export PATH
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
